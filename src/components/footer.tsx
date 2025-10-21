@@ -44,32 +44,6 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-3 sm:mb-4 text-sm sm:text-base font-semibold text-foreground">Empresa</h4>
-            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Serviços
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Contato
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Carreiras
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <h4 className="mb-3 sm:mb-4 text-sm sm:text-base font-semibold text-foreground">Conecte-se</h4>
             <div className="flex gap-2 sm:gap-3">
               <a
