@@ -3,14 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { RefreshCw, MessageCircle, Target, Clock, Users, TrendingUp } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { useState } from "react"
 
 const differences = [
@@ -113,34 +106,34 @@ export function Differences() {
                         </div>
                         {diff.title}
                       </DialogTitle>
-                      <DialogDescription className="text-base pt-2">{diff.description}</DialogDescription>
                     </DialogHeader>
+                    <div className="text-muted-foreground text-base pt-2">
+                      <p className="mb-6">{diff.description}</p>
 
-                    <div className="space-y-6 pt-4">
-                      <div className="space-y-3">
-                        <h4 className="text-lg font-semibold text-primary flex items-center gap-2">
-                          <div className="h-1 w-1 rounded-full bg-primary" />
-                          Site Corporativo
-                        </h4>
-                        <p className="text-muted-foreground leading-relaxed pl-3">{diff.detailedInfo.siteDetails}</p>
-                      </div>
+                      <div className="space-y-6">
+                        <div className="space-y-3">
+                          <h4 className="text-lg font-semibold text-primary flex items-center gap-2">
+                            <div className="h-1 w-1 rounded-full bg-primary" />
+                            Site Corporativo
+                          </h4>
+                          <p className="leading-relaxed pl-3">{diff.detailedInfo.siteDetails}</p>
+                        </div>
 
-                      <div className="space-y-3">
-                        <h4 className="text-lg font-semibold text-accent flex items-center gap-2">
-                          <div className="h-1 w-1 rounded-full bg-accent" />
-                          Blog Corporativo
-                        </h4>
-                        <p className="text-muted-foreground leading-relaxed pl-3">{diff.detailedInfo.blogDetails}</p>
-                      </div>
+                        <div className="space-y-3">
+                          <h4 className="text-lg font-semibold text-accent flex items-center gap-2">
+                            <div className="h-1 w-1 rounded-full bg-accent" />
+                            Blog Corporativo
+                          </h4>
+                          <p className="leading-relaxed pl-3">{diff.detailedInfo.blogDetails}</p>
+                        </div>
 
-                      <div className="rounded-lg border-2 border-primary/20 bg-primary/5 p-4 space-y-2">
-                        <h4 className="text-base font-semibold text-foreground flex items-center gap-2">
-                          <Target className="h-4 w-4 text-primary" />
-                          Melhor Prática
-                        </h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {diff.detailedInfo.bestPractice}
-                        </p>
+                        <div className="rounded-lg border-2 border-primary/20 bg-primary/5 p-4 space-y-2">
+                          <h4 className="text-base font-semibold text-foreground flex items-center gap-2">
+                            <Target className="h-4 w-4 text-primary" />
+                            Melhor Prática
+                          </h4>
+                          <p className="text-sm leading-relaxed">{diff.detailedInfo.bestPractice}</p>
+                        </div>
                       </div>
                     </div>
                   </DialogContent>

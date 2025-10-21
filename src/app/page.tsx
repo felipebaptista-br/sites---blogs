@@ -7,7 +7,8 @@ import { Integration } from "@/components/integration"
 import { History } from "@/components/history"
 import { StatsMarquee } from "@/components/stats-marquee"
 import { CustomerService } from "@/components/customer-service"
-import { Footer } from "@/components/footer"
+import { OnlineChat } from "@/components/online-chat"
+import { Chatbot } from "@/components/chatbot"
 
 export default function Page() {
   return (
@@ -22,7 +23,8 @@ export default function Page() {
         <Integration />
         <History />
         <CustomerService />
-        <Footer />
+        <OnlineChat />
+        <Chatbot />
       </main>
     </div>
   )
